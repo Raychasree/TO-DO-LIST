@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image:url("001.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:60%;
+    margin-left:-15rem;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(135deg,#6385c9,#c417ef);
+    margin: 100px auto 50px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin-left: 73rem;
+    margin-top:10rem;
+}
+.todo-app h2{
+    color:white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+span{
+    color: #d50c63;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #edeef0;
+    border-radius:30px;
+    padding-left: 20px;
+    margin-bottom:25px;
+    margin-left:10px;
+    width: 25rem;
+}
+input{
+    display: flex;
+    outline: none;
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    text-align: center;
+}
+button{
+    border:3px solid black;
+    outline: none;
+    padding: 16px 50px;
+    background: #c00b71;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    color: beige;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('searchicon.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgb(28, 27, 26);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('circle-check-solid.svg');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    color: antiquewhite;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
